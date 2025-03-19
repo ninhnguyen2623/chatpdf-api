@@ -69,10 +69,7 @@ SIMPLE_JWT = {
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'backend' / 'media'
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyB3ddhhSC76gpf6mAzrXbahbEYhmmI-1Rs")
-OPENROUTER_API_KEY = os.getenv("DEEPSEEK_API_KEY","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")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "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")
-HUGGINGFACE_API_KEY= "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"
+
 ROOT_URLCONF = 'project.urls'
 
 TEMPLATES = [
