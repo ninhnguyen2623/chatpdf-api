@@ -69,7 +69,9 @@ SIMPLE_JWT = {
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'backend' / 'media'
 
-
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+OPENROUTER_API_KEY = os.getenv("DEEPSEEK_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 ROOT_URLCONF = 'project.urls'
 
 TEMPLATES = [
