@@ -1,5 +1,5 @@
 # ChatPDF
-ChatPDF là một ứng dụng web cho phép người dùng tải lên PDF và trò chuyện với nội dung của họ bằng các mô hình AI như Song Tử và Deepseek. Được xây dựng với Reactjs, TypeScript và TailWindCSS, nó có giao diện người dùng thân thiện với người dùng với Google OAuth2 và tóm tắt. Phần phụ trợ Django với Redis và AI API đảm bảo tương tác tài liệu hiệu quả, an toàn cho sinh viên và chuyên gia
+ChatPDF là một ứng dụng web cho phép người dùng tải lên PDF và trò chuyện với nội dung của họ bằng các mô hình AI như Gemini và Deepseek. Được xây dựng với Reactjs, TypeScript và TailWindCSS, nó có giao diện người dùng thân thiện với người dùng với Google OAuth2 và tóm tắt. Phần phụ trợ Django với Redis và AI API đảm bảo tương tác tài liệu hiệu quả, an toàn cho sinh viên và chuyên gia
 
 ## Công nghệ được sử dụng:
 -Frontend: TypeScript, ReactJS, Redux Toolkit (Quản lý trạng thái), Axios (Yêu cầu API), TailWindcss, ANT Design, React-PDF-Viewer (kết xuất PDF), VITE (công cụ xây dựng). <br>
@@ -25,34 +25,44 @@ Login:
 ![Image](https://github.com/user-attachments/assets/6a2fc5ba-473f-45e1-8207-2234baac6b76)
 
 Home:
-![Image](https://github.com/user-attachments/assets/66b42fe7-5975-4c21-ade3-5fcbe8c27bdf)
+![Image](https://github.com/user-attachments/assets/7ee9c705-97c8-45db-9424-229158a63e9f)
+![Image](https://github.com/user-attachments/assets/e9a4218b-4cc1-4a08-b4a8-166b18290a6b)
+![Image](https://github.com/user-attachments/assets/17eb232f-5a47-42d8-a5f4-76616b35e948)
+![Image](https://github.com/user-attachments/assets/749372a9-73a0-49d2-b1dd-6ffc1e2082ec)
+![Image](https://github.com/user-attachments/assets/28a42cec-41cf-48c5-a620-e29393b34ba5)
+![Image](https://github.com/user-attachments/assets/eb6d6b99-f9fc-411b-8240-36ea2ea530c9)
+![Image](https://github.com/user-attachments/assets/f7bd624e-cf21-43f3-80b0-20054208ee29)
+![Image](https://github.com/user-attachments/assets/9a32a3bf-c106-4084-90e9-e4ba8de3de98)
+![Image](https://github.com/user-attachments/assets/7df89efe-b4e3-49de-b15e-ef9b771bc6cd)
 
 Conversation
-![Image](https://github.com/user-attachments/assets/02e03d2f-c3eb-4aa8-b196-d177948bd7fb)
+![Image](https://github.com/user-attachments/assets/b80d3e48-9964-4e61-b285-b91541eecd66)
 
 Select model AI <br>
 ![Image](https://github.com/user-attachments/assets/4b9f673d-1d2a-4032-bf39-0a490c823025)
 
 Upload file
-![Image](https://github.com/user-attachments/assets/81d2b3f3-7635-4d09-8c9d-ef30fa851ccd)
+![Image](https://github.com/user-attachments/assets/8525dd9c-cb86-49c8-a7c9-5051a48ef02e)
 
-![Image](https://github.com/user-attachments/assets/b3bf3cf2-258a-4827-b6b4-f42fb7d848e9)
+![Image](https://github.com/user-attachments/assets/a2bb5649-4c51-416a-97e1-10c25f30fb2d)
 
-![Image](https://github.com/user-attachments/assets/116f00ca-e6e3-4984-abac-28e1a2f38695)
+![Image](https://github.com/user-attachments/assets/47a172bb-2096-4591-a286-770211c3b7bc)
 
 Edit name:
-![Image](https://github.com/user-attachments/assets/38de6db5-a50e-4b2e-9d25-16d201a15cbe)
+![Image](https://github.com/user-attachments/assets/81d39d21-52a4-4b16-821c-ecb3d9b5cd7d)
 
-![Image](https://github.com/user-attachments/assets/342ba3d3-d34e-4699-b34e-d410a9d4f03a)
+![Image](https://github.com/user-attachments/assets/a87f2f74-75a2-47fc-8247-ca88ebd98ac8)
 
-![Image](https://github.com/user-attachments/assets/507a3c2e-f87b-4816-8a9f-d6624f621840)
+![image](https://github.com/user-attachments/assets/6fe25ec8-e634-40e4-81bc-8391ef50f434)
+
 
 Delete conversation:
-![Image](https://github.com/user-attachments/assets/a31964b2-85fb-495b-8412-27622c4fbbbf)
+![image](https://github.com/user-attachments/assets/0c95486f-4212-43a0-87d5-6fc037a48939)
 
-![Image](https://github.com/user-attachments/assets/344bae75-55e9-4799-90cc-7b4930f86ed9)
 
-Summary conversation
+![Image](https://github.com/user-attachments/assets/d1fdd231-2437-4727-9c27-e1b1e3b1abc1)
+
+Summary conversation <br>
 ![Image](https://github.com/user-attachments/assets/d9fb9956-2d27-4c0b-8a62-cb0b71f6d98c)
 
 ![Image](https://github.com/user-attachments/assets/03762e63-59c2-4b56-9e68-fa0e3ee1d750)
