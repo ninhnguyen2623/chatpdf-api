@@ -340,7 +340,7 @@ class SummaryMessageByAiView(APIView):
         full_conversation = "\n".join(
             [f"{'User' if msg['is_user'] else 'AI'}: {msg['content']}" for msg in message_history]
         )
-        summary_prompt = f"Please summarize the following conversation:\n\n{full_conversation}"
+        summary_prompt = f"Hãy tóm tắt lại đầy đủ và chi tiết về nội dung trong cuộc hội thoại để tôi làm báo cáo word:\n\n{full_conversation}"
 
         # Gọi model AI để tóm tắt
         pdf_text = None

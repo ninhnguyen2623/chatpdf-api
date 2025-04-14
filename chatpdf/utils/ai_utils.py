@@ -1,3 +1,4 @@
+# chatpdf/utils/ai_utils.py
 import google.generativeai as genai
 from openai import OpenAI
 from django.conf import settings
