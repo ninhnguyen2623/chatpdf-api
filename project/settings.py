@@ -82,6 +82,9 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
+# Cấu hình model User tùy chỉnh
+AUTH_USER_MODEL = 'chatpdf.User'
+
 # Cấu hình allauth
 ACCOUNT_LOGIN_METHODS = {'email'}  # Đơn giản hóa: chỉ dùng email để đăng nhập
 ACCOUNT_SIGNUP_FIELDS = ['email*', 'password1*', 'password2*']  # Email và password đều bắt buộc khi đăng ký
@@ -138,10 +141,25 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# connect sqlite
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+# connect mySql
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': config('MYSQL_DATABASE', default='chatpdf_db'),
+        'USER': config('MYSQL_USER', default='root'),
+        'PASSWORD': config('MYSQL_PASSWORD', default=''),
+        'HOST': config('MYSQL_HOST', default='localhost'),
+        'PORT': config('MYSQL_PORT', default='3306'),
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        },
     }
 }
 
@@ -199,3 +217,15 @@ REST_FRAMEWORK = {
 REDIS_HOST = 'localhost'
 REDIS_PORT = 6379
 REDIS_DB = 0
+
+VNPAY_TMN_CODE = config('YOUR_VNPAY_TMN_CODE')  # Lấy từ VNPay
+VNPAY_HASH_SECRET = config('YOUR_VNPAY_HASH_SECRET')  # Lấy từ VNPay
+VNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'
+VNPAY_RETURN_URL = 'http://localhost:8000/api/payment/vnpay/callback/' # URL frontend xử lý callback
+
+# cấu hình paypal
+PAYPAL_CLIENT_ID = config('PAYPAL_CLIENT_ID')
+PAYPAL_SECRET = config('PAYPAL_SECRET')
+PAYPAL_MODE = 'sandbox'  # Chuyển sang 'live' khi triển khai
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+PAYPAL_RETURN_URL = 'http://localhost:8000/'

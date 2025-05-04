@@ -2,6 +2,15 @@
 
 from rest_framework import serializers
 from .models import PDFDocument, Conversation, Message
+from django.contrib.auth import get_user_model
+
+
+User = get_user_model()
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'email', 'is_plus', 'plus_expiry']
 
 class PDFDocumentSerializer(serializers.ModelSerializer):
     class Meta:

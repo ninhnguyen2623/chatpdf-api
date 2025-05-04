@@ -153,7 +153,7 @@ def get_qwen_response(conversation_id: int, user_message: str, pdf_text: str = N
             base_url="https://openrouter.ai/api/v1"
         )
         response = client.chat.completions.create(
-            model="qwen/qwq-32b:free",
+            model="qwen/qwen3-4b:free",
             messages=[
                 {"role": "system", "content": f"{pdf_context}\n\n--- Previous Conversation ---\n{chat_history}"},
                 {"role": "user", "content": user_message},
@@ -208,3 +208,4 @@ def get_gemma_response(conversation_id: int, user_message: str, pdf_text: str = 
 def clear_context(conversation_id: int):
     redis_client.delete(f"pdf_context:{conversation_id}")
     redis_client.delete(f"chat_history:{conversation_id}")  # Xóa cả lịch sử chat
+
